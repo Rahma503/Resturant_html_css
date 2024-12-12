@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background: url('./images/chicken-fajita-chicken-fillet-fried-with-bell-pepper-lavash-with-bread-slices-white-plate.jpg') center center/cover no-repeat;
+    position: relative;
+}
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(229, 142, 20);
+    padding-top: 20px;
+
+}
+
+.navbar img {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    padding-bottom: 15px;
+
+}
+
+.other a {
+    text-decoration: none;
+    padding: 20px 50px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    align-items: center;
+
+}
+
+.other a:hover {
+    color: aliceblue;
+    border: 2px solid white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+
+
+}
+
+.content h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: aliceblue;
+
+}
+
+.content p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.firstspan {
+    color: rgb(237, 142, 8);
+
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: none;
+
+}
+
+.book-btn {
+
+    border: 2px solid rgb(239, 153, 13);
+    margin-top: 50px;
+    background-color: rgb(228, 221, 211);
+    color: rgb(28, 24, 24);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.book-btn:hover {
+    background-color: rgb(238, 159, 14);
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.4);
+
+}
+
+header * {
+    z-index: 10;
+}
+
+/* About */
+#about {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 238, 222);
+}
+
+#about .title,
+#offers .title,
+#menu .title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#about h2,
+#offers h2,
+#menu h2 ,#contact h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#about p,
+#menu p , #contact p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+
+}
+
+#about .about-content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#about .about-content img {
+    width: 450px;
+}
+
+/* offers */
+#offers {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background: url('./images/offer-background.jpg') center center/cover fixed;
+}
+
+#offers h2 {
+    color: rgb(237, 142, 8);
+
+}
+
+#offers p {
+    color: aliceblue;
+}
+
+#offers h3 {
+    color: rgb(237, 142, 8);
+    font-size: 25px;
+    font-weight: 700;
+
+}
+
+.offers-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.offers-items img {
+    width: 200px;
+}
+
+.offers-items span {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+/* menu */
+
+
+#menu {
+    padding: 5rem 0;
+    background-color: rgb(247, 238, 222);
+}
+
+#menu .menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu .menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+
+}
+
+#menu .menu-item img {
+    border-radius: 50%;
+    margin-right: 20px;
+
+
+}
+
+#menu .menu-item h3 {
+
+    border-bottom: 2px solid gray;
+    margin-bottom: 10px;
+    padding-bottom: 10PX;
+    position: relative;
+
+}
+
+#menu .menu-items .menu-item .firstspan {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+/* daytime */
+
+#daytime{
+    background: url('./images/daytime_bg.jpeg') center center/cover fixed no-repeat;
+    
+}
+.daytime-items{
+    display: flex;
+    justify-content: center;
+    align-items:center  ;
+    padding: 20px 20px;
+}
+.daytime-items .daytime-item h3{
+    
+    margin-right: 50px;
+    color: rgb(186, 110, 10);
+    font-size: 20px;
+}
+.daytime-items .daytime-item p{
+    display: inline-block;
+    margin-right: 50px;
+    color: antiquewhite;
+}
+
+.social_icons a{
+    text-decoration: none;
+    color: rgb(24, 80, 129);
+    font-size: 2.5em;
+    
+    padding: 10px;
+
+
+
+}
+
+
+/* contact */
+
+#contact{
+    padding: 5rem 0;
+    background-color: rgb(247, 238, 222);
+
+
+
+}
+#contact .container{
+    max-width: 900px;
+}
+
+#contact .contact-content{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+#contact .contact-content .contact-info{
+    width: 50%;
+}
+
+
+#contact .contact-content .contact-info div{ 
+    margin: 20px 0;
+    line-height: 1.7;
+}
+
+#contact .contact-content .contact-info h3{ 
+    font-size: 28px;
+    margin-bottom: 10px;
+
+ 
+}
+
+#contact .contact-content .contact-info i{ 
+    color: rgb(202, 140, 26);
+    font-size: 30px;
+    margin-right: 15px;
+ 
+}
+
+
